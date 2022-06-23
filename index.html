@@ -1,0 +1,59 @@
+<html>
+	<head> 
+		<title> </title>
+	
+		<style type="text/css">
+			#toparea
+			{
+				width:1200px;
+				height:150px;
+			}
+			#logoarea
+			{
+				width:150px;
+				height:150px;
+				background:pink;
+				float:left;
+			}
+			#titlearea
+			{
+				width:1050px;
+				height:150px;
+				background:red;
+				float:left;
+			}
+			@media screen and (max-width:1000px)
+			{
+				#toparea,#logoarea,#titlearea
+				{
+					width:100%;
+				}
+			}
+			@media print
+			{
+				#logoarea
+				{
+					display:none;
+				}
+			}
+			
+			@media screen and (orientation:landscape)
+			{
+				#toparea,#logoarea,#titlearea
+				{
+					display:none;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+			<div id="toparea">
+				<div id="logoarea">
+				</div>
+				<div id="titlearea">
+				</div>
+			</div>
+
+	</body>
+</html>
